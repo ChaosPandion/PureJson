@@ -1,0 +1,30 @@
+name: PureJson
+version: 0.5.2
+cabal-version: >=1.2
+build-type: Simple
+license: AllRightsReserved
+license-file: C:\Users\Matthew\Projects\PureJson\LICENSE.txt
+copyright: Copyright (c) 2013 Matthew O'Brien
+maintainer: Matthew O'Brien
+description:  
+author: Matthew O'Brien
+data-dir: ""
+
+source-repository head
+  type: git
+  location: https://github.com/ChaosPandion/PureJson.git
+ 
+library
+    build-depends: QuickCheck -any, base -any, containers -any,
+                   parsec -any, text -any
+    exposed-modules: PureJson
+    exposed: True
+    buildable: False
+    hs-source-dirs: .
+ 
+executable PureJson
+    build-depends: QuickCheck -any, base -any, containers -any,
+                   parsec -any, text -any
+    main-is: Main.hs
+    buildable: True
+    hs-source-dirs: .
